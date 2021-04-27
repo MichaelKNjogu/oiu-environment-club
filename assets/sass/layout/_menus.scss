@@ -1,1 +1,45 @@
 /* Styles for menus */
+
+.top-menu-container {
+    .top-menu {
+        display: flex;
+        @extend %unstyled-list;
+        li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &.logo {
+                margin-right: 90px;
+            }
+            &.menu-link {
+                a {
+                    color: $text-color;
+                    display: block;
+                    @include convert-to-rem( 16, 600 );
+                    padding: 0 20px;
+                    &:hover {
+                        color: $oi_yellow;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.top-bar-links {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    ul {
+        display: inline-flex;
+        justify-content: flex-end;
+        @extend %unstyled-list;
+        li {
+            a {
+                display: block;
+                margin-left: 20px;
+            }
+        }
+    }  
+}

@@ -1,1 +1,8 @@
 /* Styles for the header */
+
+.header {
+    background-color: #fff;
+    &-inner {
+        padding: 20px 0;
+    }
+}

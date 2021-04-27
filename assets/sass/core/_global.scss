@@ -15,10 +15,16 @@ body {
 
 a {
     text-decoration: none;
+    @include transition( 200ms );
 }
 
 button, button:focus, button:active {
     border: none;
     box-shadow: none;
     outline: none;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
 }
