@@ -1,0 +1,47 @@
+/* Main sass file containing all partials */
+/* Variables & mixins */
+/* Variables & mixins */
+/* Components */
+/* Styles for buttons */
+/* Styles for sliders and carousels */
+/* Styles for forms */
+/* Layout */
+/* Styles for the header */
+/* Styles for the footer */
+/* Styles for body elements */
+.wrapper {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.page-margin {
+  margin: auto;
+  max-width: 1200px;
+}
+
+/* Styles for menus */
+/* Templates */
+/* Styles for the homepage template */
+/* Core */
+/* Global styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Typography */
+/*# sourceMappingURL=base.css.map */

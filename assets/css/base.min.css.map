@@ -1,0 +1,20 @@
+{
+    "version": 3,
+    "mappings": "AOEA,AAAA,QAAQ,AAAC,CACL,UAAU,CAAE,MAAM,CAClB,QAAQ,CAAE,QAAQ,CACrB,AAED,AAAA,YAAY,AAAC,CACT,MAAM,CAAE,IAAI,CACZ,SAAS,CAAE,MAAM,CACpB,AGRD,AAAA,IAAI,AAAC,CACD,eAAe,CAAE,MAAM,CAC1B,AAED,AAAA,IAAI,AAAC,CACD,WAAW,CTLH,SAAS,CAAE,UAAU,CAUzB,SAAI,CAAE,IAAY,CAClB,SAAI,CAAE,IAAkB,CACxB,WAAM,CSNmB,GAAG,CAChC,sBAAsB,CAAE,WAAW,CACnC,uBAAuB,CAAE,SAAS,CAClC,UAAU,CAAE,MAAM,CAClB,cAAc,CAAE,kBAAkB,CACrC,AAED,AAAA,CAAC,AAAC,CACE,eAAe,CAAE,IAAI,CACxB,AAED,AAAA,MAAM,CAAE,MAAM,AAAA,MAAM,CAAE,MAAM,AAAA,OAAO,AAAC,CAChC,MAAM,CAAE,IAAI,CACZ,UAAU,CAAE,IAAI,CAChB,OAAO,CAAE,IAAI,CAChB",
+    "sources": [
+        "../sass/base.scss",
+        "../sass/_helpers.scss",
+        "../sass/components/_buttons.scss",
+        "../sass/components/_sliders.scss",
+        "../sass/components/_forms.scss",
+        "../sass/layout/_header.scss",
+        "../sass/layout/_footer.scss",
+        "../sass/layout/_page.scss",
+        "../sass/layout/_menus.scss",
+        "../sass/templates/_home.scss",
+        "../sass/core/_global.scss",
+        "../sass/core/_typography.scss"
+    ],
+    "names": [],
+    "file": "base.min.css"
+}

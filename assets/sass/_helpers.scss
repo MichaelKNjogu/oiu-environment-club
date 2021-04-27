@@ -1,0 +1,24 @@
+/* Variables & mixins */
+
+$main_font: 'Manrope', sans-serif;
+
+%unstyled-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin convert-to-rem( $pixels, $weight:null ) {
+    font: {
+        size: $pixels + px;
+        size: ($pixels/16) + rem;
+        weight: $weight;
+    }
+}
+
+@mixin transition( $duration ) {
+    -moz-transition: all $duration cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    -o-transition: all $duration cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    -webkit-transition: all $duration cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    transition: all $duration cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}

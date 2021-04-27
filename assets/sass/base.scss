@@ -1,0 +1,22 @@
+/* Main sass file containing all partials */
+
+/* Variables & mixins */
+@import 'helpers';
+
+/* Components */
+@import 'components/buttons';
+@import 'components/sliders';
+@import 'components/forms';
+
+/* Layout */
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/page';
+@import 'layout/menus';
+
+/* Templates */
+@import 'templates/home';
+
+/* Core */
+@import 'core/global';
+@import 'core/typography';
