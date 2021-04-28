@@ -14,11 +14,11 @@ To view the demo, go to https://michael-njogu-oiu-environmental-club.netlify.app
 
 ## Tech Stack
 
-* [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - Web framework
+* [Bootstrap v5.0.0-beta3](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - Web framework
 * [Sass](https://sass-lang.com/documentation) - CSS pre-processor
-* [Fontawesome 5](https://fontawesome.com/) - Icon library
-* [Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/docs/started-welcome.html) - Sliders & carousels
-* [jQuery](https://api.jquery.com/) - JavaScript framework
+* [Fontawesome v5.15.3](https://fontawesome.com/) - Icon library
+* [Owl Carousel v2.3.4](https://owlcarousel2.github.io/OwlCarousel2/docs/started-welcome.html) - Sliders & carousels
+* [jQuery v3.6.0](https://api.jquery.com/) - JavaScript framework
 
 ## Authors
 
