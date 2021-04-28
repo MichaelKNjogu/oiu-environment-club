@@ -20,18 +20,14 @@
 
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Owl carousel CSS -->       
-    <link href="assets/vendor/owl-carousel/owl.carousel.min.css" rel="stylesheet" />
-    <link href="assets/vendor/owl-carousel/owl.theme.default.min.css" rel="stylesheet" />    
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700&display=swap" rel="stylesheet">   
 
     <!-- Main stylesheet -->
     <link href="assets/css/base.min.css" rel="stylesheet" />
 
 </head>
 
-<body>
+<body class="oiu-login">
 
     <!-- Wrapper -->
     <div class="wrapper">
@@ -47,7 +43,11 @@
                                 <ul class="top-menu">
                                     <li class="logo">
                                         <a href="index.html" title="Environmental Club at The Open Institute University">
-                                            <img loading="lazy" src="assets/img/tembeqa-logo.png" width="200" height="61" alt="Tembeqa Logo" />
+                                            <picture>
+                                                <source media="(max-width:1023.98px)" srcset="assets/img/logos/going-green-logo.png" />
+                                                <source media="(min-width:1024px)" srcset="assets/img/logos/going-green-logo.png" />
+                                                <img loading="lazy" src="assets/img/logos/going-green-logo.png" width="200" height="51" alt="Going Green Logo" />
+                                            </picture>
                                         </a>                                   
                                     </li>
                                     <li class="menu-link"><a href="#">About</a></li>
@@ -59,8 +59,8 @@
                             <div class="col-lg-4">
                                 <div class="top-bar-links">
                                     <ul>
-                                        <li><a href="#"><button class="custom-btn custom-btn-rounded">Sign In</button></a></li>
-                                        <li><a href="#"><button class="custom-btn custom-btn-rounded">Register</button></a></li>
+                                        <li><a href="login.html"><button class="custom-btn custom-btn-rounded">Sign In</button></a></li>
+                                        <li><a href="#"><button class="custom-btn custom-btn-secondary custom-btn-rounded">Register</button></a></li>
                                     </ul>
                                 </div>
                             </div><!-- End col-4 -->
@@ -68,14 +68,64 @@
                     </div>
                 </div>
             </div>
-        </header><!-- End header -->
+            <div class="menu-toggle"><i class="fas fa-bars fa-2x"></i></div>
+            <div class="mobile-menu-container">
+                <div class="mobile-menu-container__inner">
+                    <h3>Main Menu</h3>
+                    <nav class="mobile-menu">
+                        <ul>
+                            <li><a href="#">About</a></li>      
+                            <li><a href="#">Programmes</a></li>
+                            <li><a href="#">Cohorts</a></li>
+                            <li><a href="#">Gallery</a></li>               
+                        </ul>
+                    </nav>                    
+                </div>
+            </div><!-- End mobile menu container -->
+        </header><!-- End header -->  
 
+        <!-- Login page elements -->
+        <section class="login">
+            <div class="row">
+                <!-- Sign in form -->
+                <div class="col-lg-6">
+                    <div class="login-form">
+                        <form id="login" name="login" method="post" role="form">
+                            <h3>Sign In</h3>
+                            <!-- Email / username -->
+                            <div class="mb-3">
+                                <input class="form-control" type="email" name="email-address" id="email-address" placeholder="Email address" required />
+                            </div>
+                            <!-- Password -->
+                            <div class="mb-5">
+                                <input class="form-control" type="password" name="user-pass" id="user-pass" placeholder="Password" required />
+                            </div>    
+                            <!-- Login button -->    
+                            <button type="submit" class="custom-btn custom-btn-rounded custom-btn-dark" name="sign-in" id="sign-in">Sign In</button>                    
+                            <!-- Form links -->
+                            <ul class="login-form-links">
+                                <li><a href="#">Forgot password?</a></li>
+                                <li><a href="#">Register</a></li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+                <!-- Background image -->
+                <div class="col-lg-6">
+                    <div class="login-background">
+                        <img src="assets/img/environmental-club-students.jpg" alt="Environmental club students" draggable="false" />
+                    </div>
+                </div>
+            </div>
+        </section>  
+
+        <!-- Footer -->
         <footer class="footer">
             <div class="page-margin">
                 <div class="row">
                     <!-- Logo -->
                     <div class="col-lg-3 footer-logo">
-                        <img src="assets/img/tembeqa-logo-vertical.png" alt="Tembeqa Logo" />
+                        <img src="assets/img/logos/going-green-footer-logo.png" alt="Going Green Footer Logo" />
                         <span>Copyright &copy; 2021. All rights reserved.</span>
                     </div>
 
@@ -113,15 +163,12 @@
                     </div>
                 </div>            
             </div>
-        </footer>
+        </footer><!-- End footer -->
 
     </div><!-- End wrapper -->
 
     <!-- jQuery -->
     <script src="assets/vendor/jquery/jquery.min.js"></script>
-
-    <!-- Owl carousel -->
-    <script src="assets/vendor/owl-carousel/owl.carousel.min.js"></script>
 
     <!-- Fontawesome -->
     <script data-search-pseudo-elements src="assets/vendor/fontawesome/all.min.js"></script>    
