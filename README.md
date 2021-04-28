@@ -23,6 +23,7 @@ This project has been created with:
 
 * [Bootstrap v5.0.0-beta3](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - Web framework
 * [Sass](https://sass-lang.com/documentation) - CSS pre-processor
+* [Google Font Library](https://fonts.google.com/about) - Font library
 * [Fontawesome v5.15.3](https://fontawesome.com/) - Icon library
 * [Owl Carousel v2.3.4](https://owlcarousel2.github.io/OwlCarousel2/docs/started-welcome.html) - Sliders & carousels
 * [jQuery v3.6.0](https://api.jquery.com/) - JavaScript framework
