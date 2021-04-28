@@ -29,3 +29,8 @@ img {
     height: auto;
     max-width: 100%;
 }
+
+.form-control, .form-control:focus {
+    box-shadow: none;
+    outline: none;
+}
