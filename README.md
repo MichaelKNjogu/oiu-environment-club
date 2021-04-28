@@ -14,5 +14,6 @@ This is a demo for The Open Institute's Environmental Club.
 
 * [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - Web framework
 * [Sass](https://sass-lang.com/documentation) - CSS pre-processor
+* [Fontawesome 5](https://fontawesome.com/) - Icon library
 * [Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/docs/started-welcome.html) - Sliders & carousels
 * [jQuery](https://api.jquery.com/) - JavaScript framework
