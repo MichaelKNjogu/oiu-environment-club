@@ -2,6 +2,27 @@
 
 (function($) {
 
+    /* Mobile menu */
+    const menuToggle = $('.menu-toggle');
+    const mobileMenu = $('.mobile-menu-container');
+    const mobileUnderlay = $('.mobile-underlay');
+
+    menuToggle.on( "click", function() {
+        $(this).toggleClass("active").next().toggleClass("open");
+    });
+
+    /* Hide Mobile Menu on Resize */
+    const $window = $(window);
+
+    $window.on( "resize", function() {
+        console.log(this.innerWidth);
+        if( this.innerWidth >= 1024 ) {
+            menuToggle.removeClass("is-active");
+            mobileMenu.removeClass("open");  
+        }
+    });
+
+
     /* Partners carousel */
     const logoCarousel = $('.partners-carousel');
     
