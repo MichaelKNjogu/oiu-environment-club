@@ -10,8 +10,9 @@ This is a demo for The Open Institute's Environmental Club.
 ## Installation & Usage
 <p>Download all the contents of the root folder and copy/upload them to your local or remote server.</p>
 
-## Built With
+## Frameworks & Plugins
 
-* [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - Web framework
+* [Sass](https://sass-lang.com/documentation) - CSS pre-processor
+* [Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/docs/started-welcome.html) - Sliders & carousels
+* [jQuery](https://api.jquery.com/) - JavaScript framework
