@@ -10,6 +10,30 @@
     }
 }
 
+body {
+    &.oiu-login, .oiu-programmes {
+        .header {
+            background-color: #fff;
+            box-shadow: 0 1px 10px rgba( $text_color, .3 );
+            position: relative;
+            .top-menu-container {
+                .top-menu {
+                    li {
+                        &.menu-link {
+                            a {
+                                color: $text_color;
+                                &:hover {
+                                    color: $oi_yellow;
+                                }
+                            }
+                        }
+                    }
+                }
+            }            
+        }
+    }
+}
+
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
     .header {
