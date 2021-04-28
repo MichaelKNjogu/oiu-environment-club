@@ -46,61 +46,28 @@
             @include convert-to-rem( 45, 600 );
         }
     }
-    &-thumbnails {
-        bottom: -150px;
-        left: 0;
-        margin: 0 auto;
-        right: 0;
-        position: absolute;
-        width: 1200px;
-        z-index: 3;
-        ul {
-            display: flex;
-            justify-content: center;
-            @extend %unstyled-list;
-            li {
-                border-radius: 10px;
-                cursor: pointer;
-                height: 320px;
-                margin: 0 10px;
-                overflow: hidden;
-                position: relative;
-                @include transition( 300ms );
-                top: 0;
-                width: 240px;
-                &:hover {
-                    top: -10px;
+}
 
-                }
-                .hero-thumbnails-img {
-                    overflow: hidden;
-                    img {
-                        height: 320px;
-                        object: {
-                            fit: cover;
-                            position: center center;
-                        }
-                    }
-                }
-                .hero-thumbnails-content {
-                    left: 0;
-                    margin: auto;
-                    padding: 20px;
-                    position: absolute;
-                    right: 0;
-                    text-align: center;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    h4 {
-                        margin-bottom: 0;
-                        a {
-                            color: #fff;
-                            display: block;
-                            font-weight: 600;
-                            height: 100%;
-                        }
-                    }
-                }
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .hero {
+        &-content {
+            padding: 0 20px;
+            h2 {
+                @include convert-to-rem( 40 );
+            }
+        }
+    }    
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .hero {
+        height: 500px;
+        &-content {
+            padding: 0 20px;
+            h2 {
+                @include convert-to-rem( 40 );
             }
         }
     }
@@ -109,10 +76,10 @@
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
     .hero {
+        height: 500px;
         &-content {
-            padding: 0 20px;
             h2 {
-                @include convert-to-rem( 40 );
+                @include convert-to-rem( 35 );
             }
         }
     }
@@ -149,8 +116,8 @@
     }
 }
 
-// X-Small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
     .intro {
         padding: 200px 0 0;
         &-block {
@@ -159,6 +126,41 @@
                 width: 100%;
                 img {
                     height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }    
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .intro {
+        padding: 200px 0 0;
+        &-block {
+            &-img {
+                margin-bottom: 30px;
+                width: 100%;
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 767.98px) {
+    .intro {
+        padding: 200px 0 0;
+        &-block {
+            &-img {
+                margin-bottom: 30px;
+                width: 100%;
+                img {
+                    height: 100%;
+                    width: 100%;
                 }
             }
         }
@@ -166,11 +168,20 @@
 }
 
 .quote {
-    background-color: #c4c4c4;
+    background-color: $oi_blue;
     &-img {
         background-color: rgba(0,0,0,.3);
         height: 245px;
-        width: 440px;        
+        overflow: hidden;
+        width: 440px;    
+        img {
+            height: 100%;
+            object: {
+                fit: cover;
+                position: center center;
+            }
+            width: 100%;
+        }    
     }
     &-content {
         align-items: flex-start;
@@ -187,6 +198,44 @@
             margin-bottom: 0;
         }   
     }
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+    .quote {
+        &-img {
+            width: 100%;
+        }
+        &-content {
+            padding: 30px 0;
+        }
+    }     
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .quote {
+        &-img {
+            margin-top: 30px;
+            width: 100%;
+        }
+        &-content {
+            padding: 30px 0;
+        }
+    }     
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .quote {
+        &-img {
+            margin-top: 30px;
+            width: 100%;
+        }
+        &-content {
+            padding: 30px 0;
+        }
+    }    
 }
 
 // X-Small devices (portrait phones, less than 576px)
