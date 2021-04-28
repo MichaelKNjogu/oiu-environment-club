@@ -11,6 +11,7 @@
         img {
             display: block;
             margin-bottom: 10px;
+            max-width: 170px;
         }
         span {
             @include convert-to-rem( 14 );
