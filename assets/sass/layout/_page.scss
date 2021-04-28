@@ -10,10 +10,234 @@
     max-width: 1200px;
 }
 
+.page-title {
+    background: {
+        color: #e5e5e5;
+        image: url( 'img/leaves.jpg' );
+        position: center center;
+        repeat: no-repeat;
+        size: cover;
+    }
+    padding: 100px 0;
+    position: relative;
+    &-overlay {
+        background-color: $text_color;
+        height: 100%;
+        left: 0;
+        opacity: 0.4;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+    }
+    h1 {
+        @include convert-to-rem( 40, 600 );
+        color: #fff;
+        margin-bottom: 0;
+        position: relative;
+    }
+}
+
+.page-content {
+    padding: 50px 0 30px;
+    .program-video {
+        background-color: rgba( $text_color, 1 );
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+        top: -200px;
+        width: 600px;
+        a {
+            border: 1px solid #fff;
+            border-radius: 50%;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            height: 60px;
+            justify-content: center;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 60px;
+            z-index: 1;
+            .svg-inline--fa {
+                width: auto;
+            }
+        }
+        img {
+            height: 100%;
+            object: {
+                fit: cover;
+                position: center center;
+            }
+            opacity: .5;
+            width: 100%;
+        }
+    }  
+}
+
+.program-details {
+    padding: 0 0 50px;
+    ul {
+        @extend %unstyled-list;
+        li {
+            height: 120px;
+            padding-left: 100px;
+            position: relative;
+            &::after {
+                border-radius: 50%;
+                content: "";
+                background-color: rgba( $oi_yellow, 1 );
+                height: 15px;
+                left: -7px;
+                position: absolute;
+                top: 0;
+                width: 15px;
+            }
+            &::before {
+                content: "";
+                background-color: rgba( $oi_yellow, 1 );
+                height: 100%;
+                left: 0;
+                position: absolute;
+                width: 2px;
+            }
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}  
+
+.program-activities {
+    padding: 0 0 50px;
+    h4 {
+        margin-bottom: 30px;
+    }
+    &-list {
+        column: {
+            count: 3;
+            gap: 0;
+        }
+        ul {
+            li {
+                .svg-inline--fa {
+                    color: $oi_maroon;
+                }
+            }
+        }
+    }
+}
+
 // X-Large devices (large desktops, less than 1400px)
 @media (max-width: 1399.98px) {
     .page-margin {
         max-width: 1170px;
-        padding: 0 20px;
+        padding: 0 30px;
+    }
+    .page-content {
+        .program-intro {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+        }
+        .program-video {
+            top: 0;
+            width: 100%;
+        }
+    }    
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .page-title {
+        padding: 30px 0;
+        h1 {
+            @include convert-to-rem( 30 );
+        }
+    }
+    .page-content {
+        .program-video {
+            top: 0;
+            width: 100%;
+        }
+    }
+    .program-details {
+        ul {
+            li {
+                height: auto;
+                padding: {
+                    bottom: 30px;
+                    left: 30px;
+                }
+            }
+        }
+    }    
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .page-title {
+        padding: 30px 0;
+        h1 {
+            @include convert-to-rem( 30 );
+        }
+    }
+    .page-content {
+        .program-video {
+            top: 0;
+            width: 100%;
+        }
+    }
+    .program-details {
+        ul {
+            li {
+                height: auto;
+                padding: {
+                    bottom: 30px;
+                    left: 30px;
+                }
+            }
+        }
+    }    
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .page-title {
+        padding: 30px 0;
+        h1 {
+            @include convert-to-rem( 30 );
+        }
+    }
+    .page-content {
+        .program-video {
+            top: 0;
+            width: 100%;
+        }
+    }
+    .program-details {
+        ul {
+            li {
+                height: auto;
+                padding: {
+                    bottom: 30px;
+                    left: 30px;
+                }
+            }
+        }
+    }
+    .program-activities {
+        &-list {
+            column-count: 1;
+            .fa-ul {
+                margin-left: 1.5em;
+            }
+        }
     }
 }

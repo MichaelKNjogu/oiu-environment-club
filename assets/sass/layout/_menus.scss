@@ -15,7 +15,8 @@
 }
 
 .mobile-menu-container {
-    background-color: #fff;
+    background-color: rgba( $oi_grey, 1 );
+    backface-visibility: hidden;
     border-radius: 5px;
     display: block;
     left: 15px;
@@ -84,7 +85,23 @@
                     }
                 }
             }
-        }            
+        }     
+        .mobile-menu-links {
+            margin-top: 10px;
+            padding-top: 10px;
+            ul {
+                @extend %unstyled-list;
+                li {
+                    margin: 5px 0;
+                    a {
+                        display: block;
+                        button {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }               
     }
 }
 
