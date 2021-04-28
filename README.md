@@ -6,3 +6,6 @@
 
 <h2>Description</h2>
 <p>This is a demo for The Open Institute's Environmental Club.</p>
+
+<h2>Usage</h2>
+<p>Download all the contents of the root folder and copy/upload them to your local or remote server.</p>
