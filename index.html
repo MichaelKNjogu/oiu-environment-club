@@ -20,7 +20,7 @@
 
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Owl carousel CSS -->       
     <link href="assets/vendor/owl-carousel/owl.carousel.min.css" rel="stylesheet" />
@@ -55,7 +55,7 @@
                                         </a>                                   
                                     </li>
                                     <li class="menu-link"><a href="#">About</a></li>
-                                    <li class="menu-link"><a href="#">Programmes</a></li>
+                                    <li class="menu-link"><a href="program.html">Programmes</a></li>
                                     <li class="menu-link"><a href="#">Cohorts</a></li>
                                     <li class="menu-link"><a href="#">Gallery</a></li>
                                 </ul>
@@ -64,7 +64,7 @@
                                 <div class="top-bar-links">
                                     <ul>
                                         <li><a href="login.html"><button class="custom-btn custom-btn-rounded">Sign In</button></a></li>
-                                        <li><a href="#"><button class="custom-btn custom-btn-secondary custom-btn-rounded">Register</button></a></li>
+                                        <li><a href="login.html"><button class="custom-btn custom-btn-secondary custom-btn-rounded">Register</button></a></li>
                                     </ul>
                                 </div>
                             </div><!-- End col-4 -->
@@ -83,7 +83,13 @@
                             <li><a href="#">Cohorts</a></li>
                             <li><a href="#">Gallery</a></li>               
                         </ul>
-                    </nav>                    
+                    </nav>        
+                    <div class="mobile-menu-links">
+                        <ul>
+                            <li><a href="login.html"><button class="custom-btn custom-btn-rounded">Sign In</button></a></li>
+                            <li><a href="login.html"><button class="custom-btn custom-btn-rounded custom-btn-secondary">Register</button></a></li>
+                        </ul>
+                    </div>                                
                 </div>
             </div><!-- End mobile menu container -->
         </header><!-- End header -->
@@ -98,7 +104,7 @@
                 <h2>The Earth is Worth Fighting For.</h2>
             </div>
             <div class="hero-thumbnails">
-                <ul>
+                <ul class="hero-carousel owl-carousel owl-theme">
                     <li>
                         <div class="hero-thumbnails-overlay"></div>
                         <div class="hero-thumbnails-img">
@@ -163,12 +169,12 @@
                     <!-- Programmes -->
                     <div class="intro-block">
                         <div class="row flex-column-reverse flex-lg-row">
-                            <div class="intro-block-content col-lg-7 order-sm-2 order-md-1">
+                            <div class="intro-block-content col-lg-7 order-sm-1 order-md-1">
                                 <h3>Programmes</h3>
                                 <p>Lacus, quis arcu nibh id et phasellus ut elementum. Lobortis sodales commodo amet facilisi cras velit hendrerit praesent ultrices. At metus ac.</p>
                                 <button class="custom-btn custom-btn-rounded">View More</button>
                             </div>                        
-                            <div class="col-lg-5 order-sm-1 order-md-2">
+                            <div class="col-lg-5 order-sm-2 order-md-2">
                                 <div class="intro-block-img">
                                     <img loading="lazy" src="assets/img/students.jpg" alt="African students in class" />
                                 </div>
@@ -187,7 +193,7 @@
                             <div class="intro-block-content col-lg-7">
                                 <h3>Registration</h3>
                                 <p>Lacus, quis arcu nibh id et phasellus ut elementum. Lobortis sodales commodo amet facilisi cras velit hendrerit praesent ultrices. At metus ac.</p>
-                                <button class="custom-btn custom-btn-rounded">Register</button>
+                                <a href="login.html" title="Register or sign in to your account"><button class="custom-btn custom-btn-rounded">Register</button></a>
                             </div>
                         </div>
                     </div>                                     
@@ -202,6 +208,7 @@
                 <div class="row">
                     <div class="col-lg-5">
                         <div class="quote-img">
+                            <img src="assets/img/african-american-professional-woman.jpeg" alt="African American Professional Woman" />
                         </div>
                     </div>
                     <div class="col-lg-7">
@@ -220,37 +227,36 @@
                 <h4>Our Partners</h4>
                 <div class="partners-carousel owl-carousel owl-theme">
                     <div class="partners-carousel-item">
-                        <img loading="lazy" src="assets/img/tembeqa-logo-dark.png" alt="" />
+                        <img loading="lazy" src="assets/img/partners/un-habitat-logo.png" alt="UN Habitat" />
                     </div>
                     <div class="partners-carousel-item">
-                        <img loading="lazy" src="assets/img/tembeqa-logo-dark.png" alt="" />
+                        <img loading="lazy" src="assets/img/partners/micrososft.png" alt="Microsoft" />
                     </div>   
                     <div class="partners-carousel-item">
-                        <img loading="lazy" src="assets/img/tembeqa-logo-dark.png" alt="" />
+                        <img loading="lazy" src="assets/img/partners/google.png" alt="Google" />
                     </div>    
                     <div class="partners-carousel-item">
-                        <img loading="lazy" src="assets/img/tembeqa-logo-dark.png" alt="" />
+                        <img loading="lazy" src="assets/img/partners/kenya-wildlife-service-logo.png" alt="Kenya Wildlife Service" />
                     </div>    
                     <div class="partners-carousel-item">
-                        <img loading="lazy" src="assets/img/tembeqa-logo-dark.png" alt="" />
+                        <img loading="lazy" src="assets/img/partners/foundation-logo.png" alt="Safaricom Foundation" />
                     </div>                                                                     
                 </div>
             </div>
         </section>
 
-        <!-- Logos carousel -->
-
+        <!-- Footer -->
         <footer class="footer">
             <div class="page-margin">
                 <div class="row">
                     <!-- Logo -->
-                    <div class="col-lg-3 footer-logo">
+                    <div class="col-xl-3 col-lg-3 col-md-6 footer-logo">
                         <img src="assets/img/logos/going-green-footer-logo.png" alt="Going Green Footer Logo" />
                         <span>Copyright &copy; 2021. All rights reserved.</span>
                     </div>
 
                     <!-- Quick links -->
-                    <div class="col-lg-3 footer-links">
+                    <div class="col-xl-3 col-lg-2 col-sm-6 col-md-6 footer-links">
                         <h5>Quick Links</h5>
                         <ul>
                             <li><a href="#"">Programmes</a></li>
@@ -262,7 +268,7 @@
                     </div>
 
                     <!-- Contact us -->
-                    <div class="col-lg-3 footer-contacts">
+                    <div class="col-xl-3 col-lg-3 col-sm-6 col-md-6 footer-contacts">
                         <h5>Contact Us</h5>
                         <ul>
                             <li><i class="far fa-envelope-open"></i><a href="mailto:engage@tembeqa.africa">engage@tembeqa.africa</a></li>
@@ -272,7 +278,7 @@
                     </div>
 
                     <!-- Connect -->
-                    <div class="col-lg-3 footer-social">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-md-6 footer-social">
                         <h5>Connect</h5>
                         <ul>
                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -294,10 +300,10 @@
     <script src="assets/vendor/owl-carousel/owl.carousel.min.js"></script>
 
     <!-- Fontawesome -->
-    <script data-search-pseudo-elements src="assets/vendor/fontawesome/all.min.js"></script>    
+    <script defer data-search-pseudo-elements src="assets/vendor/fontawesome/all.min.js"></script>    
 
     <!-- Custom JavaScript -->
-    <script src="assets/js/scripts.js"></script>        
+    <script defer src="assets/js/scripts.js"></script>        
 
     <!-- Bootstrap 5 JS -->
     <script defer src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
