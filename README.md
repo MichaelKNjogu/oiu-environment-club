@@ -15,6 +15,10 @@ This is a demo for a web application for a fictional environmental club under th
 
 To view the demo, go to https://michael-njogu-oiu-environmental-club.netlify.app
 
+#### Project Links
+[Sign In Page](https://michael-njogu-oiu-environmental-club.netlify.app/login.html)
+[Programmes Page](https://michael-njogu-oiu-environmental-club.netlify.app/program.html)
+
 ### Usage
 <p>Download all the contents of the root folder and copy/upload them to your local or remote server.</p>
 
