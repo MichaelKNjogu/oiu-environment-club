@@ -6,7 +6,6 @@
 * [Usage](#usage)
 * [Technologies](#technologies)
 * [Authors](#authors)
-* [License](#license)
 
 ### Description
 This is a demo for The Open Institute's Environmental Club. The aim of this project is to propose a design for the upcoming club.
@@ -20,6 +19,7 @@ To view the demo, go to https://michael-njogu-oiu-environmental-club.netlify.app
 <p>Download all the contents of the root folder and copy/upload them to your local or remote server.</p>
 
 ### Technologies
+This project has been created with:
 
 * [Bootstrap v5.0.0-beta3](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - Web framework
 * [Sass](https://sass-lang.com/documentation) - CSS pre-processor
@@ -30,7 +30,3 @@ To view the demo, go to https://michael-njogu-oiu-environmental-club.netlify.app
 ### Authors
 
 * **Michael Njogu** - *Initial work* - [Michael Njogu](https://github.com/Michael-Njogu)
-
-### License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
