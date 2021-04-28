@@ -1,18 +1,25 @@
 # OIU Environmental Club
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8e40fae3-2792-46fa-b1b0-0b4f38b8f6de/deploy-status)](https://app.netlify.com/sites/michael-njogu-oiu-environmental-club/deploys)
-
 ## Table of Contents
+* [Description](#description)
+* [Demo](#demo)
+* [Usage](#usage)
+* [Technologies](#technologies)
+* [Authors](#authors)
+* [License](#license)
 
-## Description & Demo
+### Description
 This is a demo for The Open Institute's Environmental Club. The aim of this project is to propose a design for the upcoming club.
+
+### Demo
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8e40fae3-2792-46fa-b1b0-0b4f38b8f6de/deploy-status)](https://app.netlify.com/sites/michael-njogu-oiu-environmental-club/deploys)
 
 To view the demo, go to https://michael-njogu-oiu-environmental-club.netlify.app
 
-## Installation & Usage
+### Usage
 <p>Download all the contents of the root folder and copy/upload them to your local or remote server.</p>
 
-## Tech Stack
+### Technologies
 
 * [Bootstrap v5.0.0-beta3](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - Web framework
 * [Sass](https://sass-lang.com/documentation) - CSS pre-processor
@@ -20,10 +27,10 @@ To view the demo, go to https://michael-njogu-oiu-environmental-club.netlify.app
 * [Owl Carousel v2.3.4](https://owlcarousel2.github.io/OwlCarousel2/docs/started-welcome.html) - Sliders & carousels
 * [jQuery v3.6.0](https://api.jquery.com/) - JavaScript framework
 
-## Authors
+### Authors
 
 * **Michael Njogu** - *Initial work* - [Michael Njogu](https://github.com/Michael-Njogu)
 
-## License
+### License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
