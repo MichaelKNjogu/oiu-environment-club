@@ -8,7 +8,7 @@
 * [Authors](#authors)
 
 ### Description
-This is a demo for The Open Institute's Environmental Club. The aim of this project is to propose a design for the upcoming club.
+Proposed design for a web application for the Open Institute University Environment Club.
 
 ### Demo
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8e40fae3-2792-46fa-b1b0-0b4f38b8f6de/deploy-status)](https://app.netlify.com/sites/michael-njogu-oiu-environmental-club/deploys)
