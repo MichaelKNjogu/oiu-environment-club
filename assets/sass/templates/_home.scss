@@ -43,7 +43,7 @@
         top: 50%;
         transform: translateY(-50%);
         h2 {
-            @include convert-to-rem( 50, 600 );
+            @include convert-to-rem( 45, 600 );
         }
     }
     &-thumbnails {
