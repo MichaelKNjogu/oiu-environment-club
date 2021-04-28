@@ -17,3 +17,7 @@ This is a demo for The Open Institute's Environmental Club.
 * [Fontawesome 5](https://fontawesome.com/) - Icon library
 * [Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/docs/started-welcome.html) - Sliders & carousels
 * [jQuery](https://api.jquery.com/) - JavaScript framework
+
+## Authors
+
+* **Michael Njogu** - *Initial work* - [Michael Njogu](https://github.com/Michael-Njogu)
