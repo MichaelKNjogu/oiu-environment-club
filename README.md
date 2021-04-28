@@ -21,3 +21,7 @@ This is a demo for The Open Institute's Environmental Club.
 ## Authors
 
 * **Michael Njogu** - *Initial work* - [Michael Njogu](https://github.com/Michael-Njogu)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
