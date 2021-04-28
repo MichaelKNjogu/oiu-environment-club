@@ -5,6 +5,7 @@ html {
 }
 
 body {
+    background-color: #fff;
     font-family: $main_font;
     @include convert-to-rem( 16, 400 );
     -webkit-font-smoothing: antialiased;

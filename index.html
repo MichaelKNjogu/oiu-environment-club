@@ -9,6 +9,7 @@
 
     <title>Environmental Club &#124; The Open Institute University</title>
 
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="assets/img/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/img/icons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/img/icons/apple-icon-72x72.png">
@@ -32,7 +33,14 @@
 
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">        
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Flexslider CSS -->
+    <link href="assets/vendor/flexslider/flexslider.css" rel="stylesheet" />
+
+    <!-- Owl carousel CSS -->       
+    <link href="assets/vendor/owl-carousel/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/vendor/owl-carousel/owl.theme.default.min.css" rel="stylesheet" />    
 
     <!-- Main stylesheet -->
     <link href="assets/css/base.min.css" rel="stylesheet" />
@@ -41,19 +49,21 @@
 
 <body>
 
+    <!-- Wrapper -->
     <div class="wrapper">
 
+        <!-- Header -->
         <header class="header">
             <div class="header-inner">
                 <div class="page-margin">
                     <div class="top-menu-container">
-                        <div class="row">
+                        <div class="row g-0">
                             <!-- Logo & main menu -->
                             <div class="col-lg-8">
                                 <ul class="top-menu">
                                     <li class="logo">
                                         <a href="index.html" title="Environmental Club at The Open Institute University">
-                                            <img loading="lazy" src="assets/img/oi-logo.png" width="220" height="43" alt="The Open Institute University" />
+                                            <img loading="lazy" src="assets/img/tembeqa-logo.png" width="200" height="61" alt="Tembeqa Logo" />
                                         </a>                                   
                                     </li>
                                     <li class="menu-link"><a href="#">About</a></li>
@@ -74,13 +84,203 @@
                     </div>
                 </div>
             </div>
-        </header>
+        </header><!-- End header -->
 
+        <!-- Hero -->
         <section class="hero">
-            <section class="hero-inner"></section>
+            <div class="hero-overlay"></div>
+            <div class="hero-img">
+                <img src="assets/img/environmental-club.jpg" alt="Group of stundents from the environmental club" />
+            </div>
+            <div class="hero-content">
+                <h2>Saving the Planet One Tree at a Time</h2>
+            </div>
+            <div class="hero-thumbnails">
+                <ul>
+                    <li>
+                        <div class="hero-thumbnails-overlay"></div>
+                        <div class="hero-thumbnails-img">
+                            <img src="assets/img/zanzibar.jpg" alt="" />
+                        </div>
+                        <div class="hero-thumbnails-content">
+                            <h4><a href="#">Zanzibar Spice Tour</a></h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hero-thumbnails-overlay"></div>
+                        <div class="hero-thumbnails-img">
+                            <img src="assets/img/slave-trade.jpg" alt="" />
+                        </div>
+                        <div class="hero-thumbnails-content">
+                            <h4><a href="#">Slave Trade Tour</a></h4>
+                        </div>
+                    </li> 
+                    <li>
+                        <div class="hero-thumbnails-overlay"></div>
+                        <div class="hero-thumbnails-img">
+                            <img src="assets/img/nyerere.jpg" alt="" />
+                        </div>
+                        <div class="hero-thumbnails-content">
+                            <h4><a href="#">Mwalimu Nyerere Tour</a></h4>
+                        </div>
+                    </li> 
+                    <li>
+                        <div class="hero-thumbnails-overlay"></div>
+                        <div class="hero-thumbnails-img">
+                            <img src="assets/img/kigali.jpg" alt="" />
+                        </div>
+                        <div class="hero-thumbnails-content">
+                            <h4><a href="#">Kigali Rememberance Tour</a></h4>
+                        </div>
+                    </li>                                                          
+                </ul>
+            </div>
+        </section>    
+
+        <!-- Intro -->
+        <section class="intro">
+            <div class="page-margin">
+                <div class="intro-blocks">
+
+                    <!-- About -->
+                    <div class="intro-block">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="intro-block-img">
+                                    <img src="assets/img/african-students.jpg" alt="African students studying" />
+                                </div>
+                            </div>
+                            <div class="intro-block-content col-lg-7">
+                                <h3>About</h3>
+                                <p>Lacus, quis arcu nibh id et phasellus ut elementum. Lobortis sodales commodo amet facilisi cras velit hendrerit praesent ultrices. At metus ac.</p>
+                                <button class="custom-btn custom-btn-rounded">View More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Programmes -->
+                    <div class="intro-block">
+                        <div class="row">
+                            <div class="intro-block-content col-lg-7">
+                                <h3>Programmes</h3>
+                                <p>Lacus, quis arcu nibh id et phasellus ut elementum. Lobortis sodales commodo amet facilisi cras velit hendrerit praesent ultrices. At metus ac.</p>
+                                <button class="custom-btn custom-btn-rounded">View More</button>
+                            </div>                        
+                            <div class="col-lg-5">
+                                <div class="intro-block-img">
+                                    <img src="assets/img/students.jpg" alt="African students in class" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+
+                    <!-- Registration -->
+                    <div class="intro-block">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="intro-block-img">
+                                    <img src="assets/img/female-student.jpg" alt="Female student smiling" />
+                                </div>
+                            </div>
+                            <div class="intro-block-content col-lg-7">
+                                <h3>Registration</h3>
+                                <p>Lacus, quis arcu nibh id et phasellus ut elementum. Lobortis sodales commodo amet facilisi cras velit hendrerit praesent ultrices. At metus ac.</p>
+                                <button class="custom-btn custom-btn-rounded">Register</button>
+                            </div>
+                        </div>
+                    </div>                                     
+                    
+                </div>
+            </div>
         </section>
 
+        <!-- Quote -->
+        <section class="quote">
+            <div class="page-margin">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="quote-img">
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="quote-content">
+                            <span class="quote-mark"><i class="fas fa-quote-left fa-2x"></i></span>
+                            <p>Lacus, quis arcu nibh id et phasellus ut elementumr. Lobortis sodales commodo amet facilisi cras velit hendrerit praesent ultrices. At metus ac.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners -->
+        <section class="partners">
+            <div class="page-margin">
+                <h4>Our Partners</h4>
+                <div class="partners-carousel owl-carousel owl-theme">
+                    <div class="partners-carousel-item">
+                        <img loading="lazy" src="assets/img/tembeqa-logo-dark.png" alt="" />
+                    </div>
+                    <div class="partners-carousel-item">
+                        <img loading="lazy" src="assets/img/tembeqa-logo-dark.png" alt="" />
+                    </div>   
+                    <div class="partners-carousel-item">
+                        <img loading="lazy" src="assets/img/tembeqa-logo-dark.png" alt="" />
+                    </div>    
+                    <div class="partners-carousel-item">
+                        <img loading="lazy" src="assets/img/tembeqa-logo-dark.png" alt="" />
+                    </div>    
+                    <div class="partners-carousel-item">
+                        <img loading="lazy" src="assets/img/tembeqa-logo-dark.png" alt="" />
+                    </div>                                                                     
+                </div>
+            </div>
+        </section>
+
+        <!-- Logos carousel -->
+
         <footer class="footer">
+            <div class="page-margin">
+                <div class="row">
+                    <!-- Logo -->
+                    <div class="col-lg-3 footer-logo">
+                        <img src="assets/img/tembeqa-logo-vertical.png" alt="Tembeqa Logo" />
+                        <span>Copyright &copy; 2021. All rights reserved.</span>
+                    </div>
+
+                    <!-- Quick links -->
+                    <div class="col-lg-3 footer-links">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="#"">Programmes</a></li>
+                            <li><a href="#"">Who We Are</a></li>
+                            <li><a href="#"">What We Do</a></li>
+                            <li><a href="#"">Leadership</a></li>
+                            <li><a href="#"">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact us -->
+                    <div class="col-lg-3 footer-contacts">
+                        <h5>Contact Us</h5>
+                        <ul>
+                            <li><i class="far fa-envelope-open"></i><a href="mailto:engage@tembeqa.africa">engage@tembeqa.africa</a></li>
+                            <li><i class="far fa-map"></i>Nairobi, Kenya</li>
+                            <li><i class="fas fa-mobile-alt"></i><a href="tel:+255 712 345 678">+255 712 345 678</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Connect -->
+                    <div class="col-lg-3 footer-social">
+                        <h5>Connect</h5>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>            
+            </div>
         </footer>
 
     </div><!-- End wrapper -->
@@ -88,16 +288,17 @@
     <!-- jQuery -->
     <script src="assets/vendor/jquery/jquery.min.js"></script>
 
-    <!-- Custom JavaScript -->
-    <script defer src="assets/js/scripts.js"></script>
+    <!-- Flexslider -->
+    <script src="assets/vendor/flexslider/jquery.flexslider-min.js"></script>
 
-    <!-- Owl Carousel -->
-    <script defer src="assets/vendor/owl-carousel/owl.carousel.min.js"></script>
-    <script defer src="assets/vendor/owl-carousel/owl.carousel.init.js"></script>
-    <link href="assets/vendor/owl-carousel/owl.carousel.min.css" rel="stylesheet" />
+    <!-- Owl carousel -->
+    <script src="assets/vendor/owl-carousel/owl.carousel.min.js"></script>
 
     <!-- Fontawesome -->
-    <script data-search-pseudo-elements src="assets/vendor/fontawesome/all.min.js"></script>
+    <script data-search-pseudo-elements src="assets/vendor/fontawesome/all.min.js"></script>    
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/scripts.js"></script>        
 
     <!-- Bootstrap 5 JS -->
     <script defer src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>

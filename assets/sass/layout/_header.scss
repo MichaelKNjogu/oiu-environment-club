@@ -1,7 +1,10 @@
 /* Styles for the header */
 
 .header {
-    background-color: #fff;
+    //background-color: #fff;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
     &-inner {
         padding: 20px 0;
     }

@@ -13,7 +13,7 @@
             }
             &.menu-link {
                 a {
-                    color: $text-color;
+                    color: #fff;
                     display: block;
                     @include convert-to-rem( 16, 600 );
                     padding: 0 20px;

@@ -1,1 +1,121 @@
 /* Styles for sliders and carousels */
+
+.hero {
+    background-color: $oi_grey; 
+    position: relative;
+}
+
+.hero-slider, .hero-thumbnails {
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-slider {
+    height: 600px;
+    overflow: hidden;   
+    position: relative;
+    z-index: 2;
+    &-overlay {
+        background: #000;
+        background: linear-gradient( to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5), rgba(0,0,0,0) );
+        height: 200px;
+        left: 0;
+        //opacity: .6;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+    }    
+    &-item {    
+        img {
+            height: 600px;
+            object: {
+                fit: cover;
+                position: center center;
+            }
+             width: 100%;
+        }                   
+    }            
+}
+
+.hero-thumbnails {
+    bottom: -100px;
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+    position: absolute;
+    width: 1200px;
+    z-index: 3;
+    &-overlay {
+        background-color: #000;
+        height: 100%;
+        left: 0;
+        opacity: .4;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+    }    
+    .slides {
+        &>li {
+            cursor: pointer;
+            .hero-thumbnails-item {
+                overflow: hidden;
+                position: relative;
+                width: 280px;
+                h4 {
+                    font-weight: 700;
+                    left: 0;
+                    margin: auto;
+                    padding: 20px;
+                    position: absolute;
+                    right: 0;
+                    top: 70%;
+                    text: {
+                        align: center;
+                        //transform: uppercase;
+                    }
+                    transform: translateY(-50%);
+                    a {
+                        color: #fff;
+                    }
+                }
+                img {
+                    height: 400px;
+                    object: {
+                        fit: cover;
+                        position: center center;
+                    }
+                    width: 280px;
+                }
+            }
+            &:last-child {
+                margin-right: 0 !important;
+            }
+        }
+    }
+}
+
+.partners {
+    background-color: #fff;
+    padding: 55px 0;
+    text-align: center;
+    h4 {
+        font-weight: 600;
+    }
+    &-carousel {
+        padding: 60px 0 30px;
+        &-item {
+            img {
+                height: 100px;
+                width: auto;
+                object: {
+                    fit: contain;
+                    position: center center;
+                }
+            }
+        }
+    }
+}
