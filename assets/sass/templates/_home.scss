@@ -60,11 +60,18 @@
             @extend %unstyled-list;
             li {
                 border-radius: 10px;
+                cursor: pointer;
                 height: 320px;
                 margin: 0 10px;
                 overflow: hidden;
                 position: relative;
+                @include transition( 300ms );
+                top: 0;
                 width: 240px;
+                &:hover {
+                    top: -10px;
+                    
+                }
                 .hero-thumbnails-img {
                     overflow: hidden;
                     img {
