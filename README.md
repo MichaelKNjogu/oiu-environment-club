@@ -5,7 +5,7 @@
 To view the demo, go to https://michael-njogu-oiu-environmental-club.netlify.app
 
 ## Description
-This is a demo for The Open Institute's Environmental Club.
+This is a demo for The Open Institute's Environmental Club. The aim of this project is to propose a design for the upcoming club.
 
 ## Installation & Usage
 <p>Download all the contents of the root folder and copy/upload them to your local or remote server.</p>
