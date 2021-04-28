@@ -2,6 +2,17 @@
 
 (function($) {
 
+    /* Sticky header */
+    let prev = 0;
+    let $window = $(window);
+    let nav = $('.header');
+
+    $window.on( 'scroll', function() {
+        let scrollTop = $window.scrollTop();
+        nav.toggleClass( 'hidden', scrollTop > prev );
+        prev = scrollTop;
+    });      
+
     /* Mobile menu */
     const menuToggle = $('.menu-toggle');
     const mobileMenu = $('.mobile-menu-container');
@@ -12,8 +23,6 @@
     });
 
     /* Hide Mobile Menu on Resize */
-    const $window = $(window);
-
     $window.on( "resize", function() {
         console.log(this.innerWidth);
         if( this.innerWidth >= 1024 ) {
@@ -22,6 +31,37 @@
         }
     });
 
+    /* Hero carousel */
+    const heroCarousel = $('.hero-carousel');
+
+    heroCarousel.owlCarousel({
+        dots: false,
+        items: 4,
+        responsive: {
+            // breakpoint from 480 upwards
+            0: {
+                dots: true,
+                items: 1 
+            },
+            600: {
+                dots: true,
+                items: 3
+            },
+            700: {
+                dots: true,
+                items: 2
+            },
+            900: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            },
+            1200: {
+                items: 4
+            }
+        },         
+    })
 
     /* Partners carousel */
     const logoCarousel = $('.partners-carousel');
@@ -41,6 +81,9 @@
                 center: false,
                 items: 1 
             },
+            600: {
+                items: 2
+            },
             700: {
                 items: 2
             },
@@ -48,7 +91,7 @@
                 items: 2
             },
             1000: {
-                items: 3
+                items: 4
             },
             1200: {
                 items: 5
